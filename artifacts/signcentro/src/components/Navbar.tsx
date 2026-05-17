@@ -18,6 +18,13 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-6 text-sm font-medium">
           <Link href="/product" className="text-foreground/80 hover:text-foreground transition-colors">Product</Link>
           <Link href="/solutions" className="text-foreground/80 hover:text-foreground transition-colors">Solutions</Link>
+          <Link href="/whatsapp" className="text-[#00A884] font-bold hover:text-[#00A884]/80 transition-colors flex items-center gap-1">
+            WhatsApp Signing
+            <span className="flex h-2 w-2 relative ml-1">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00A884] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00A884]"></span>
+            </span>
+          </Link>
           <Link href="/api" className="text-foreground/80 hover:text-foreground transition-colors">API</Link>
           <Link href="/security" className="text-foreground/80 hover:text-foreground transition-colors">Security</Link>
           <Link href="/pricing" className="text-foreground/80 hover:text-foreground transition-colors">Pricing</Link>
@@ -47,6 +54,7 @@ export function Navbar() {
           <div className="flex flex-col space-y-4">
             <Link href="/product" onClick={() => setIsOpen(false)}>Product</Link>
             <Link href="/solutions" onClick={() => setIsOpen(false)}>Solutions</Link>
+            <Link href="/whatsapp" onClick={() => setIsOpen(false)} className="text-[#00A884] font-bold">WhatsApp Signing</Link>
             <Link href="/api" onClick={() => setIsOpen(false)}>API</Link>
             <Link href="/security" onClick={() => setIsOpen(false)}>Security</Link>
             <Link href="/pricing" onClick={() => setIsOpen(false)}>Pricing</Link>

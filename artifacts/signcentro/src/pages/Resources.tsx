@@ -34,20 +34,20 @@ export default function Resources() {
         <section className="py-16 bg-muted/20">
           <div className="container mx-auto px-4 max-w-6xl">
             {/* Featured Article */}
-            <div className="mb-16 rounded-3xl overflow-hidden bg-card border shadow-lg group flex flex-col md:flex-row cursor-pointer">
-              <div className="md:w-1/2 bg-gradient-to-br from-primary/20 via-accent/20 to-secondary/20 min-h-[300px] relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:scale-105 transition-transform duration-700">
-                  <BookOpen className="w-32 h-32" />
+            <div className="mb-16 rounded-3xl overflow-hidden bg-card border shadow-lg group flex flex-col md:flex-row cursor-pointer" onClick={() => window.location.href = '/whatsapp'}>
+              <div className="md:w-1/2 bg-gradient-to-br from-[#00A884]/20 via-primary/10 to-accent/10 min-h-[300px] relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center opacity-30 group-hover:scale-105 transition-transform duration-700 text-[#00A884]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
                 </div>
               </div>
               <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                <Badge className="w-fit mb-4">Featured Guide</Badge>
-                <h2 className="text-3xl font-bold mb-4 group-hover:text-primary transition-colors">The 2024 State of Digital Agreements in Enterprise</h2>
+                <Badge className="w-fit mb-4 bg-[#00A884] text-white hover:bg-[#00A884]/80 border-none">Product Spotlight</Badge>
+                <h2 className="text-3xl font-bold mb-4 group-hover:text-[#00A884] transition-colors">The Power of WhatsApp Signing</h2>
                 <p className="text-muted-foreground text-lg mb-6">
-                  Discover how leading organizations are moving beyond basic e-signatures to fully automated, integrated agreement lifecycle management.
+                  Discover how leading organizations are moving beyond basic email workflows to reach customers instantly on their preferred messaging app.
                 </p>
-                <div className="flex items-center text-sm text-primary font-bold">
-                  Read the full report <ArrowRight className="ml-2 h-4 w-4" />
+                <div className="flex items-center text-sm text-[#00A884] font-bold">
+                  Explore the feature <ArrowRight className="ml-2 h-4 w-4" />
                 </div>
               </div>
             </div>

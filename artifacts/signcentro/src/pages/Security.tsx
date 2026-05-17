@@ -137,7 +137,7 @@ export default function Security() {
 
         <CTASection 
           title="Discuss Your Security Requirements" 
-          subtitle="Our security architects are ready to review your specific compliance needs."
+          subtitle="Our security architects are ready to review your specific compliance needs for portal, email, and WhatsApp signing workflows."
           primaryText="Speak with a security architect"
           primaryHref="/contact"
         />

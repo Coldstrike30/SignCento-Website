@@ -93,7 +93,7 @@ export default function About() {
 
         <CTASection 
           title="Join us in modernizing agreements" 
-          subtitle="We're always looking for talented people to join our mission."
+          subtitle="We're always looking for talented people to join our mission of building frictionless workflows like WhatsApp Signing."
           primaryText="View Open Roles"
           primaryHref="/careers"
           secondaryText="Contact Us"

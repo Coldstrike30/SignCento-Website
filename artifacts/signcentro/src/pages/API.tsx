@@ -164,8 +164,9 @@ print(f"Created request: {request.id}")`}
 
         <CTASection 
           title="Start Building with Signcentro" 
-          subtitle="Get access to sandbox environments, extensive documentation, and developer support."
+          subtitle="Get access to sandbox environments, extensive documentation, and developer support for embedded and WhatsApp signing."
           primaryText="Contact Developer Relations"
+          primaryHref="/contact"
         />
       </main>
       <Footer />

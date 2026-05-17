@@ -131,6 +131,8 @@ export default function Solutions() {
         <CTASection 
           title="Ready to optimize your workflow?" 
           subtitle="Explore our platform or speak to a specialist to design your ideal signing solution."
+          primaryText="Start WhatsApp Signing"
+          primaryHref="/whatsapp"
         />
       </main>
       <Footer />

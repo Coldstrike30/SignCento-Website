@@ -1,0 +1,123 @@
+IMPORTANT POSITIONING UPDATE:
+The key differentiator of Signcentro is WhatsApp Signing.
+
+The website must clearly position Signcentro as the e-signature platform that allows people to securely receive, review, verify, sign, and complete documents directly from WhatsApp.
+
+This differentiator should appear strongly on:
+- Homepage hero
+- Feature section
+- Product page
+- WhatsApp Signing page
+- Pricing page
+- Final CTA sections
+
+UPDATED HERO HEADLINE:
+Sign Documents Directly from WhatsApp.
+
+UPDATED HERO SUBHEADLINE:
+Signcentro helps businesses send documents to customers, employees, vendors, and partners through WhatsApp, enabling them to verify, review, sign, and complete agreements securely without downloading another app.
+
+SECONDARY HEADLINE:
+The Fastest Way to Get Documents Signed.
+
+KEY MESSAGE:
+Email signing works. Portal signing works. But WhatsApp signing removes friction, improves response rates, and makes digital signing feel natural for today’s mobile-first users.
+
+HOMEPAGE HERO CTA:
+- Start WhatsApp Signing
+- Book Enterprise Demo
+
+HERO VISUAL:
+Create a split-screen hero visual:
+Left side:
+A WhatsApp chat interface showing:
+“Hello Ada, FirstTrust Bank has sent you a document for signature.”
+Buttons:
+Review Document
+Verify with OTP
+Sign Now
+
+Right side:
+A Signcentro admin dashboard showing:
+- Sent via WhatsApp
+- Viewed
+- OTP Verified
+- Signed
+- Completed
+
+NEW SECTION AFTER HERO:
+Heading:
+Why WhatsApp Signing Changes Everything
+
+Copy:
+Most customers already live on WhatsApp. Signcentro brings secure digital signing into the channel they use every day, reducing delays, improving completion rates, and removing the need for app downloads, portal logins, or long email threads.
+
+Cards:
+1. No App Download Required
+Recipients sign directly from a secure WhatsApp link.
+
+2. Faster Completion
+Reach signers where they respond fastest.
+
+3. Better Customer Experience
+Simple, familiar, mobile-first signing experience.
+
+4. Secure Verification
+Use OTP, identity checks, audit trails, and encrypted signing links.
+
+5. Ideal for Africa and Emerging Markets
+Designed for markets where WhatsApp is the default business communication channel.
+
+6. Enterprise Controlled
+Every document, action, signer, timestamp, and verification event is tracked in Signcentro.
+
+UPDATED FEATURE PRIORITY:
+Make WhatsApp Signing the first and most prominent feature card.
+
+FEATURE CARD COPY:
+WhatsApp Signing
+Send documents directly to WhatsApp. Recipients can verify their identity, review documents, sign securely, and receive confirmation without downloading any app.
+
+UPDATED PRODUCT WORKFLOW:
+Upload Document → Add Signers → Choose WhatsApp Delivery → Send Secure Link → OTP Verification → Review & Sign → Audit Trail Generated → Completed Document Stored
+
+WHATSAPP SIGNING PAGE MUST BE THE MOST BEAUTIFUL PAGE:
+Make the WhatsApp Signing page visually outstanding and conversion-focused.
+
+Page hero:
+Sign Documents Directly from WhatsApp
+
+Subheadline:
+Turn WhatsApp into a secure signing channel for contracts, onboarding forms, consent documents, loan agreements, procurement approvals, and customer authorizations.
+
+Sections:
+1. How WhatsApp Signing Works
+2. Why Businesses Love It
+3. Security & Verification
+4. Use Cases
+5. Admin Dashboard View
+6. Customer Signing Experience
+7. Enterprise Controls
+8. Final CTA
+
+USE CASES:
+- Loan agreements
+- Account opening forms
+- HR offer letters
+- Employee policy acknowledgements
+- Vendor onboarding
+- Procurement approvals
+- Customer consent forms
+- Insurance documents
+- Delivery confirmations
+- Field service approvals
+
+SECURITY MESSAGE:
+WhatsApp is used as the delivery and engagement channel. The signing process is secured through Signcentro’s encrypted signing links, OTP verification, identity checks, access controls, and complete audit trails.
+
+FINAL CTA:
+Ready to Get Documents Signed Faster?
+Use WhatsApp to reduce signing delays and improve completion rates.
+Buttons:
+Start WhatsApp Signing
+Book Demo

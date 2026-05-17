@@ -14,27 +14,34 @@ export default function Pricing() {
       name: "Starter",
       desc: "For individuals and small teams.",
       price: isAnnual ? "$12" : "$15",
-      features: ["5 users included", "100 documents per month", "Basic templates", "Email support", "Standard security"],
+      features: ["5 users included", "100 documents per month", "Basic templates", "WhatsApp Signing (up to 50 docs/mo)", "Email support", "Standard security"],
     },
     {
       name: "Business",
       desc: "For growing companies.",
       price: isAnnual ? "$29" : "$39",
-      features: ["Unlimited users", "Unlimited documents", "Advanced workflows", "WhatsApp signing", "Priority support", "Custom branding", "API access (limited)"],
+      features: ["Unlimited users", "Unlimited documents", "Advanced workflows", "WhatsApp Signing — unlimited", "Priority support", "Custom branding", "API access (limited)"],
       popular: true,
     },
     {
       name: "Enterprise",
       desc: "For large organizations with complex needs.",
       price: "Custom",
-      features: ["Everything in Business", "Unlimited API access", "SSO & Advanced IAM", "Dedicated success manager", "On-premise deployment option", "Custom SLA & compliance"],
+      features: ["Everything in Business", "Unlimited API access", "WhatsApp Signing with white-label and dedicated number", "SSO & Advanced IAM", "Dedicated success manager", "On-premise deployment option", "Custom SLA & compliance"],
     }
   ];
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <main className="flex-grow pt-24 pb-32">
+      <main className="flex-grow pt-8 pb-32">
+        <div className="bg-emerald-50 border-y border-emerald-100 py-3 mb-12">
+          <div className="container mx-auto px-4 flex items-center justify-center gap-2 text-emerald-800 text-sm font-bold">
+            <CheckCircle2 className="h-4 w-4 text-[#25D366]" />
+            WhatsApp Signing included on every plan.
+          </div>
+        </div>
+        
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Simple, transparent pricing.</h1>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
 
 interface HeroSectionProps {
-  badge?: string;
+  badge?: React.ReactNode;
   headline: ReactNode;
   subheadline: string;
   buttons?: ReactNode;

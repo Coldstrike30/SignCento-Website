@@ -2,7 +2,7 @@ import { useSeo } from "@/hooks/use-seo";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
-import { DashboardMockup } from "@/components/DashboardMockup";
+import { HeroSplitVisual } from "@/components/HeroSplitVisual";
 import { FeatureCard } from "@/components/FeatureCard";
 import { IndustryCard } from "@/components/IndustryCard";
 import { SecurityCard } from "@/components/SecurityCard";
@@ -12,11 +12,11 @@ import { CTASection } from "@/components/CTASection";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ShieldCheck, Workflow, Code2, MessageCircle, BadgeCheck, Activity, FileCheck2, FilesIcon, Landmark, Building2, Users, Scale, Truck, ShoppingCart, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Workflow, Code2, MessageCircle, BadgeCheck, Activity, FileCheck2, FilesIcon, Landmark, Building2, Users, Scale, Truck, ShoppingCart, CheckCircle2, Smartphone, Gauge, Sparkles, Globe2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
-  useSeo("Sign Documents Faster. Close Deals Smarter.", "Enterprise-grade e-signature platform built for scale.");
+  useSeo("Sign Documents Directly from WhatsApp.", "The fastest way to get documents signed. Signcentro helps businesses send documents securely through WhatsApp.");
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -25,32 +25,38 @@ export default function Home() {
       <main className="flex-grow">
         {/* 1. Hero */}
         <HeroSection 
+          badge={
+            <span className="flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-[#25D366] animate-pulse"></span>
+              Now with WhatsApp Signing
+            </span>
+          }
           headline={
             <>
-              Sign Documents Faster. <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Close Deals Smarter.</span>
+              Sign Documents Directly <br className="hidden md:block" />
+              from <span className="text-[#25D366]">WhatsApp.</span>
             </>
           }
-          subheadline="Signcentro helps modern organizations prepare, send, sign, track, and manage agreements securely from anywhere."
+          subheadline="Signcentro helps businesses send documents to customers, employees, vendors, and partners through WhatsApp, enabling them to verify, review, sign, and complete agreements securely without downloading another app."
           buttons={
             <>
-              <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8" asChild>
-                <Link href="/pricing">Start Free Trial</Link>
+              <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8 bg-primary hover:bg-primary/90" asChild>
+                <Link href="/whatsapp">Start WhatsApp Signing</Link>
               </Button>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg h-14 px-8" asChild>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg h-14 px-8 border-primary/20 hover:bg-primary/5" asChild>
                 <Link href="/contact">Book Enterprise Demo</Link>
               </Button>
             </>
           }
-          visual={<DashboardMockup />}
-          align="left"
+          visual={<HeroSplitVisual />}
+          align="center"
         />
 
         {/* 2. Trust line strip */}
-        <section className="py-10 border-y bg-muted/30">
+        <section className="py-6 border-y bg-muted/30">
           <div className="container mx-auto px-4">
-            <p className="text-center text-sm font-medium text-muted-foreground mb-8">
-              Built for secure approvals, contracts, onboarding, procurement, compliance, and workflow automation.
+            <p className="text-center text-base text-muted-foreground font-semibold mb-6">
+              The Fastest Way to Get Documents Signed.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale">
               {["ECOBANK", "MTN", "STANBIC", "AFRICA RE", "MINISTRY OF FINANCE", "DELOITTE"].map((logo, i) => (
@@ -63,56 +69,86 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 3. Why Signcentro */}
-        <section className="py-24 bg-card">
-          <div className="container mx-auto px-4 max-w-5xl">
+        {/* 3. Why WhatsApp Signing Changes Everything */}
+        <section className="py-24 bg-[#F0FDF4] border-y border-emerald-100 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-400/5 blur-[100px] rounded-full pointer-events-none" />
+          <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">More Than E-Signatures — A Complete Digital Agreement Platform</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Move beyond simple signing. Signcentro automates your entire agreement lifecycle from document generation to secure storage and compliance archiving.
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-emerald-950">Why WhatsApp Signing Changes Everything</h2>
+              <p className="text-xl text-emerald-800/80 max-w-3xl mx-auto">
+                Most customers already live on WhatsApp. Signcentro brings secure digital signing into the channel they use every day, reducing delays, improving completion rates, and removing the need for app downloads, portal logins, or long email threads.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
-              {[
-                "End-to-end document lifecycle management",
-                "Advanced role-based access control (RBAC)",
-                "Bank-grade security and encryption",
-                "Seamless API integration capabilities",
-                "Real-time audit trails and tracking",
-                "Customizable approval workflows",
-                "Multi-channel signing including WhatsApp"
-              ].map((item, i) => (
-                <motion.div 
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  key={i} 
-                  className="flex items-start gap-3"
-                >
-                  <div className="h-6 w-6 rounded-full bg-emerald-100 flex items-center justify-center shrink-0 mt-0.5">
-                    <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-                  </div>
-                  <span className="text-lg text-foreground/80">{item}</span>
-                </motion.div>
-              ))}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="border-l-4 border-[#25D366] rounded-r-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition-all">
+                <FeatureCard 
+                  icon={<Smartphone className="text-[#25D366]" />} 
+                  title="No App Download Required" 
+                  description="Recipients sign directly from a secure WhatsApp link." 
+                />
+              </div>
+              <div className="border-l-4 border-[#25D366] rounded-r-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition-all">
+                <FeatureCard 
+                  icon={<Gauge className="text-[#25D366]" />} 
+                  title="Faster Completion" 
+                  description="Reach signers where they respond fastest." 
+                />
+              </div>
+              <div className="border-l-4 border-[#25D366] rounded-r-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition-all">
+                <FeatureCard 
+                  icon={<Sparkles className="text-[#25D366]" />} 
+                  title="Better Customer Experience" 
+                  description="Simple, familiar, mobile-first signing experience." 
+                />
+              </div>
+              <div className="border-l-4 border-[#25D366] rounded-r-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition-all">
+                <FeatureCard 
+                  icon={<ShieldCheck className="text-[#25D366]" />} 
+                  title="Secure Verification" 
+                  description="Use OTP, identity checks, audit trails, and encrypted signing links." 
+                />
+              </div>
+              <div className="border-l-4 border-[#25D366] rounded-r-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition-all">
+                <FeatureCard 
+                  icon={<Globe2 className="text-[#25D366]" />} 
+                  title="Ideal for Emerging Markets" 
+                  description="Designed for markets where WhatsApp is the default business communication channel." 
+                />
+              </div>
+              <div className="border-l-4 border-[#25D366] rounded-r-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition-all">
+                <FeatureCard 
+                  icon={<Building2 className="text-[#25D366]" />} 
+                  title="Enterprise Controlled" 
+                  description="Every document, action, signer, timestamp, and verification event is tracked in Signcentro." 
+                />
+              </div>
             </div>
           </div>
         </section>
 
         {/* 4. Features */}
-        <section className="py-24 bg-muted/30">
-          <div className="container mx-auto px-4">
+        <section className="py-24 bg-card">
+          <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Platform Capabilities</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Everything you need to digitize your operations at scale.</p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <FeatureCard icon={<Workflow />} title="Smart Document Workflows" description="Automate complex signing orders, conditional routing, and multi-party approvals." delay={0} />
-              <FeatureCard icon={<ShieldCheck />} title="Secure E-Signatures" description="Legally binding electronic signatures compliant with global enterprise standards." delay={0.1} />
-              <FeatureCard icon={<Code2 />} title="API & Developer Platform" description="Embed signing seamlessly into your apps with our robust REST APIs and webhooks." delay={0.2} />
-              <FeatureCard icon={<MessageCircle />} title="WhatsApp Signing" description="Reach users where they are by delivering signature requests directly via WhatsApp." delay={0.3} />
+              <div className="md:col-span-2 lg:col-span-2 ring-1 ring-[#25D366]/50 rounded-2xl relative shadow-md bg-white">
+                <div className="absolute top-4 right-4 bg-[#25D366]/10 text-[#00A884] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#00A884]"></span>
+                  Flagship
+                </div>
+                <FeatureCard 
+                  icon={<MessageCircle className="h-8 w-8 text-[#00A884]" />} 
+                  title="WhatsApp Signing" 
+                  description="Send documents directly to WhatsApp. Recipients can verify their identity, review documents, sign securely, and receive confirmation without downloading any app." 
+                />
+              </div>
+              <FeatureCard icon={<Workflow />} title="Smart Document Workflows" description="Automate complex signing orders, conditional routing, and multi-party approvals." delay={0.1} />
+              <FeatureCard icon={<ShieldCheck />} title="Secure E-Signatures" description="Legally binding electronic signatures compliant with global enterprise standards." delay={0.2} />
+              <FeatureCard icon={<Code2 />} title="API & Developer Platform" description="Embed signing seamlessly into your apps with our robust REST APIs and webhooks." delay={0.3} />
               <FeatureCard icon={<BadgeCheck />} title="Identity Verification" description="Ensure signer authenticity with OTP, email validation, and advanced identity checks." delay={0.4} />
               <FeatureCard icon={<Activity />} title="Real-Time Tracking" description="Monitor document status, views, and completions instantly from a central dashboard." delay={0.5} />
               <FeatureCard icon={<FileCheck2 />} title="Compliance & Governance" description="Maintain comprehensive, tamper-evident audit trails for every interaction." delay={0.6} />
@@ -122,8 +158,8 @@ export default function Home() {
         </section>
 
         {/* 5. Industry Use Cases */}
-        <section className="py-24 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="py-24 bg-muted/30">
+          <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Built for Every Industry</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Tailored solutions to accelerate specific business functions.</p>
@@ -169,101 +205,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 7. API */}
-        <section className="py-24 bg-card">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col lg:flex-row gap-16 items-center">
-              <div className="lg:w-1/2">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Developer-Friendly APIs</h2>
-                <p className="text-xl text-muted-foreground mb-8">
-                  Embed secure, legally binding electronic signatures directly into your applications in minutes. Built by developers, for developers.
-                </p>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                    <span>RESTful architecture with predictable resource URLs</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                    <span>Comprehensive webhooks for real-time state sync</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                    <span>SDKs available for TypeScript, Python, Go, and Java</span>
-                  </li>
-                </ul>
-                <Button size="lg" asChild>
-                  <Link href="/api">Explore the API</Link>
-                </Button>
-              </div>
-              <div className="lg:w-1/2 w-full">
-                <CodeBlock 
-                  title="Create a signature request"
-                  code={`POST /api/v1/signature-requests
-Host: api.signcentro.com
-Authorization: Bearer sc_live_***
-
-{
-  "document_url": "https://example.com/contract.pdf",
-  "signers": [
-    {
-      "name": "Jane Doe",
-      "email": "jane@example.com",
-      "role": "Client"
-    }
-  ],
-  "callback_url": "https://app.example.com/webhook",
-  "expires_in_hours": 72
-}
-
-// 201 Created
-{
-  "request_id": "req_8f92a4b1",
-  "status": "pending",
-  "signing_url": "https://signcentro.com/s/req_8f92a4b1"
-}`} 
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 8. Testimonials */}
-        <section className="py-24 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Trusted by Enterprise Leaders</h2>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              <TestimonialCard 
-                quote="Signcentro reduced our contract turnaround time from weeks to hours. The WhatsApp signing feature was a game changer for reaching clients."
-                name="Chinedu Okafor"
-                title="Head of Operations"
-                company="Apex Trust Bank"
-                initial="CO"
-              />
-              <TestimonialCard 
-                quote="The API was incredibly easy to integrate into our core banking system. We had automated loan agreements running in production within two sprints."
-                name="Amina Diallo"
-                title="CTO"
-                company="Sahel Fintech"
-                initial="AD"
-              />
-              <TestimonialCard 
-                quote="Compliance is non-negotiable for us. Signcentro provides the exact audit trails and identity verification we need to satisfy our regulators."
-                name="Thabo Nkosi"
-                title="HR Director"
-                company="MetroTel"
-                initial="TN"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* 9. Final CTA */}
+        {/* 7. Final CTA */}
         <CTASection 
-          title="Ready to Go Paperless?" 
-          subtitle="Join thousands of organizations streamlining their agreements with Signcentro."
+          title="Ready to Get Documents Signed Faster?" 
+          subtitle="Use WhatsApp to reduce signing delays and improve completion rates."
+          primaryText="Start WhatsApp Signing"
+          primaryHref="/whatsapp"
+          secondaryText="Book Demo"
+          secondaryHref="/contact"
         />
       </main>
 
