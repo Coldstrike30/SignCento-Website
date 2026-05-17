@@ -91,29 +91,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Leadership (Placeholder) */}
-        <section className="py-24 bg-card">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Leadership Team</h2>
-            </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { name: "Sarah Chen", role: "Chief Executive Officer" },
-                { name: "Marcus Johnson", role: "Chief Technology Officer" },
-                { name: "Elena Rodriguez", role: "Chief Information Security Officer" },
-                { name: "David Kim", role: "VP of Product" },
-              ].map((leader, i) => (
-                <div key={i} className="text-center">
-                  <div className="aspect-square rounded-2xl bg-gradient-to-br from-muted to-border mb-4 overflow-hidden" />
-                  <h4 className="font-bold text-lg">{leader.name}</h4>
-                  <p className="text-sm text-muted-foreground">{leader.role}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <CTASection 
           title="Join us in modernizing agreements" 
           subtitle="We're always looking for talented people to join our mission."
