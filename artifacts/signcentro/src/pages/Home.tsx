@@ -58,14 +58,6 @@ export default function Home() {
             <p className="text-center text-base text-muted-foreground font-semibold mb-6">
               Everything you expect from a world-class e-signature platform, plus WhatsApp signing for customers who respond faster on mobile.
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale">
-              {["ECOBANK", "MTN", "STANBIC", "AFRICA RE", "MINISTRY OF FINANCE", "DELOITTE"].map((logo, i) => (
-                <div key={i} className="flex items-center gap-8 md:gap-16">
-                  <span className="text-lg font-bold tracking-widest">{logo}</span>
-                  {i < 5 && <div className="hidden md:block w-px h-6 bg-foreground/20" />}
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
