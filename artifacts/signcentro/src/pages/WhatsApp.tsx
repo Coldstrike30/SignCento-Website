@@ -23,13 +23,13 @@ export default function WhatsApp() {
       <main className="flex-grow">
         
         {/* Custom Hero for WhatsApp */}
-        <section className="relative pt-24 pb-32 overflow-hidden bg-gradient-to-b from-secondary/40 via-background to-emerald-900/10">
+        <section className="relative pt-24 pb-32 overflow-hidden bg-gradient-to-b from-secondary/40 via-background to-primary/5">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-background to-background pointer-events-none" />
           <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center max-w-4xl mx-auto mb-16">
+            <div className="text-center max-w-4xl mx-auto mb-12">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-6">
-                <Badge variant="outline" className="px-4 py-1.5 rounded-full text-sm bg-[#00A884]/10 text-[#00A884] border-[#00A884]/30 backdrop-blur font-bold">
-                  The Key Differentiator
+                <Badge variant="outline" className="px-4 py-1.5 rounded-full text-sm bg-primary/10 text-primary border-primary/30 backdrop-blur font-bold">
+                  Platform Capability
                 </Badge>
               </motion.div>
               <motion.h1 
@@ -37,8 +37,8 @@ export default function WhatsApp() {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6"
               >
-                Sign Documents Directly <br className="hidden md:block" />
-                from <span className="text-[#25D366]">WhatsApp</span>
+                WhatsApp Signing for <br className="hidden md:block" />
+                Modern Digital Agreements
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ export default function WhatsApp() {
                 transition={{ delay: 0.1 }}
                 className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto"
               >
-                Turn WhatsApp into a secure signing channel for contracts, onboarding forms, consent documents, loan agreements, procurement approvals, and customer authorizations.
+                Add WhatsApp as a secure signing channel within your enterprise e-signature workflows, without losing audit trails, compliance controls, templates, approvals, or document governance.
               </motion.p>
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
@@ -54,13 +54,22 @@ export default function WhatsApp() {
                 transition={{ delay: 0.2 }}
                 className="flex flex-col sm:flex-row gap-4 justify-center"
               >
-                <Button size="lg" className="h-14 px-8 text-lg bg-[#25D366] hover:bg-[#1EBE5D] text-white shadow-lg shadow-[#25D366]/20" asChild>
-                  <Link href="/pricing">Start WhatsApp Signing</Link>
+                <Button size="lg" className="h-14 px-8 text-lg" asChild>
+                  <Link href="/pricing">Start Free Trial</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="h-14 px-8 text-lg" asChild>
                   <Link href="/contact">Book Demo</Link>
                 </Button>
               </motion.div>
+            </div>
+
+            <div className="max-w-4xl mx-auto mb-16 bg-primary/5 border border-primary/10 rounded-2xl p-6 flex items-start gap-4">
+              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                <MonitorSmartphone className="h-5 w-5 text-primary" />
+              </div>
+              <p className="text-muted-foreground">
+                <strong className="text-foreground">Signcentro is not just a WhatsApp signing tool.</strong> It is a complete e-signature and document workflow platform that allows organizations to use WhatsApp where it improves speed, convenience, and completion rates.
+              </p>
             </div>
             
             <HeroSplitVisual />
@@ -78,11 +87,11 @@ export default function WhatsApp() {
             {/* Horizontal Timeline (Desktop) */}
             <div className="hidden lg:flex justify-between items-start relative pt-8">
               {/* Connecting line */}
-              <div className="absolute top-14 left-10 right-10 h-1 bg-gradient-to-r from-emerald-100 via-emerald-300 to-emerald-500 rounded-full" />
+              <div className="absolute top-14 left-10 right-10 h-1 bg-gradient-to-r from-primary/10 via-primary/30 to-primary/50 rounded-full" />
               
               {[
-                { step: 1, icon: <Send />, title: "Send Document", desc: "Initiate request via WhatsApp" },
-                { step: 2, icon: <MessageSquare />, title: "WhatsApp Link", desc: "Secure link delivered to chat" },
+                { step: 1, icon: <Send />, title: "Send Document", desc: "Initiate request from platform" },
+                { step: 2, icon: <MessageSquare className="text-[#25D366]" />, title: "WhatsApp Link", desc: "Secure link delivered to chat" },
                 { step: 3, icon: <Key />, title: "OTP", desc: "Identity verification" },
                 { step: 4, icon: <Eye />, title: "Review", desc: "Mobile-optimized viewer" },
                 { step: 5, icon: <PenLine />, title: "Sign", desc: "Touchscreen signature pad" },
@@ -96,7 +105,7 @@ export default function WhatsApp() {
                   transition={{ delay: i * 0.1 }}
                   className="relative flex flex-col items-center w-40 text-center"
                 >
-                  <div className="w-12 h-12 rounded-full bg-white border-4 border-emerald-100 shadow-md flex items-center justify-center text-emerald-600 mb-4 z-10">
+                  <div className="w-12 h-12 rounded-full bg-white border-4 border-primary/10 shadow-md flex items-center justify-center text-primary mb-4 z-10">
                     {item.icon}
                   </div>
                   <h4 className="font-bold text-sm mb-1">{item.title}</h4>
@@ -106,9 +115,9 @@ export default function WhatsApp() {
             </div>
 
             {/* Vertical Timeline (Mobile) */}
-            <div className="lg:hidden flex flex-col gap-0 border-l-2 border-emerald-200 pl-6 ml-4">
+            <div className="lg:hidden flex flex-col gap-0 border-l-2 border-primary/20 pl-6 ml-4">
               <WorkflowStep step={1} icon={<Send />} title="Send Document" description="Initiate a signature request specifying WhatsApp as the delivery channel." />
-              <WorkflowStep step={2} icon={<MessageSquare />} title="WhatsApp Link" description="A secure, expiring link is delivered directly to their WhatsApp chat." />
+              <WorkflowStep step={2} icon={<MessageSquare className="text-[#25D366]" />} title="WhatsApp Link" description="A secure, expiring link is delivered directly to their WhatsApp chat." />
               <WorkflowStep step={3} icon={<Key />} title="OTP Verification" description="To ensure identity, a One-Time Password is required to open the document." />
               <WorkflowStep step={4} icon={<Eye />} title="Review Document" description="The user reviews the document securely in their mobile browser." />
               <WorkflowStep step={5} icon={<PenLine />} title="Sign securely" description="The user applies their signature using their phone's touchscreen." />
@@ -246,7 +255,7 @@ export default function WhatsApp() {
             <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
               <div className="flex-1 w-full lg:order-2">
                 <div className="relative">
-                  <div className="absolute -inset-4 bg-emerald-500/10 blur-xl rounded-[3rem]" />
+                  <div className="absolute -inset-4 bg-primary/10 blur-xl rounded-[3rem]" />
                   {/* Extended Dashboard Mockup for WhatsApp context */}
                   <div className="rounded-2xl overflow-hidden border border-border bg-background shadow-2xl relative z-10">
                     <div className="h-12 border-b flex items-center px-4 justify-between bg-muted/50">

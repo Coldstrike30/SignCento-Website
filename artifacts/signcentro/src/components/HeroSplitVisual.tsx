@@ -14,10 +14,16 @@ export function HeroSplitVisual() {
           initial={{ opacity: 0, x: -30, rotateY: -10 }}
           animate={{ opacity: 1, x: 0, rotateY: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-[300px] md:w-[320px] rounded-[2.5rem] border-[6px] border-slate-800 bg-[#EFEAE2] shadow-2xl relative overflow-hidden h-[580px] flex flex-col z-20 md:-mr-8 transform md:rotate-[-2deg]"
+          className="w-[280px] md:w-[300px] rounded-[2.5rem] border-[6px] border-slate-800 bg-[#EFEAE2] shadow-xl relative overflow-hidden h-[540px] flex flex-col z-10 md:-mr-12 transform md:rotate-[-4deg] opacity-90 scale-95"
         >
+          {/* Floating badge */}
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur text-slate-800 text-[10px] font-bold px-3 py-1 rounded-full shadow-sm z-30 flex items-center gap-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]"></span>
+            WhatsApp channel
+          </div>
+          
           {/* WhatsApp Header */}
-          <div className="bg-[#00A884] text-white p-3 flex items-center gap-3 sticky top-0 z-10 shadow-sm">
+          <div className="bg-[#00A884] text-white p-3 flex items-center gap-3 sticky top-0 z-10 shadow-sm mt-8">
             <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0">
               <ShieldCheck className="h-6 w-6 text-white" />
             </div>
@@ -86,24 +92,37 @@ export function HeroSplitVisual() {
           initial={{ opacity: 0, x: 30, rotateY: 10 }}
           animate={{ opacity: 1, x: 0, rotateY: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="w-[320px] md:w-[380px] bg-card rounded-3xl border shadow-xl flex flex-col z-10 md:rotate-[2deg] transform"
+          className="w-[340px] md:w-[420px] bg-card rounded-3xl border shadow-2xl flex flex-col z-30 md:rotate-[1deg] transform relative"
         >
           <div className="p-5 border-b bg-muted/30 rounded-t-3xl">
-            <h3 className="font-semibold text-foreground text-sm mb-1">Loan Agreement — Ada Mensah</h3>
-            <p className="text-xs text-muted-foreground flex items-center gap-1">
-              <Activity className="h-3 w-3 text-blue-500" /> Live Tracking
-            </p>
+            <h3 className="font-semibold text-foreground text-base mb-1">Loan Agreement — Ada Mensah</h3>
+            <div className="flex items-center justify-between">
+              <p className="text-xs text-muted-foreground flex items-center gap-1">
+                <Activity className="h-3 w-3 text-blue-500" /> Live Tracking
+              </p>
+              
+              {/* Multi-channel pills */}
+              <div className="flex gap-1.5">
+                <span className="text-[9px] font-semibold bg-primary/10 text-primary px-2 py-0.5 rounded-full border border-primary/20">Web</span>
+                <span className="text-[9px] font-semibold bg-primary/10 text-primary px-2 py-0.5 rounded-full border border-primary/20">Email</span>
+                <span className="text-[9px] font-semibold bg-primary/10 text-primary px-2 py-0.5 rounded-full border border-primary/20">API</span>
+                <span className="text-[9px] font-semibold bg-[#25D366]/10 text-[#00A884] px-2 py-0.5 rounded-full border border-[#25D366]/30 flex items-center gap-1">
+                  <span className="w-1 h-1 rounded-full bg-[#25D366]"></span>
+                  WhatsApp
+                </span>
+              </div>
+            </div>
           </div>
           
           <div className="p-6 flex-1">
             <div className="relative pl-6 space-y-6">
               {/* Timeline line */}
               <div className="absolute left-[11px] top-2 bottom-2 w-px bg-border" />
-              <div className="absolute left-[11px] top-2 h-[60%] w-px bg-emerald-500" />
+              <div className="absolute left-[11px] top-2 h-[60%] w-px bg-primary" />
               
               {/* Steps */}
               <div className="relative">
-                <div className="absolute -left-6 bg-emerald-500 w-6 h-6 rounded-full border-4 border-card flex items-center justify-center top-0 shadow-sm">
+                <div className="absolute -left-6 bg-primary w-6 h-6 rounded-full border-4 border-card flex items-center justify-center top-0 shadow-sm">
                   <CheckCircle2 className="h-3 w-3 text-white" />
                 </div>
                 <div className="flex justify-between items-start">
@@ -116,7 +135,7 @@ export function HeroSplitVisual() {
               </div>
               
               <div className="relative">
-                <div className="absolute -left-6 bg-emerald-500 w-6 h-6 rounded-full border-4 border-card flex items-center justify-center top-0 shadow-sm">
+                <div className="absolute -left-6 bg-primary w-6 h-6 rounded-full border-4 border-card flex items-center justify-center top-0 shadow-sm">
                   <CheckCircle2 className="h-3 w-3 text-white" />
                 </div>
                 <div className="flex justify-between items-start">
@@ -129,13 +148,13 @@ export function HeroSplitVisual() {
               </div>
               
               <div className="relative">
-                <div className="absolute -left-6 bg-emerald-500 w-6 h-6 rounded-full border-4 border-card flex items-center justify-center top-0 shadow-sm">
+                <div className="absolute -left-6 bg-primary w-6 h-6 rounded-full border-4 border-card flex items-center justify-center top-0 shadow-sm">
                   <CheckCircle2 className="h-3 w-3 text-white" />
                 </div>
                 <div className="flex justify-between items-start">
                   <div>
                     <h4 className="text-sm font-semibold text-foreground">OTP Verified</h4>
-                    <p className="text-xs text-emerald-600 font-medium">Identity confirmed</p>
+                    <p className="text-xs text-primary font-medium">Identity confirmed</p>
                   </div>
                   <span className="text-[10px] text-muted-foreground">10:43 AM</span>
                 </div>
@@ -168,7 +187,7 @@ export function HeroSplitVisual() {
           <div className="p-4 border-t bg-muted/10 rounded-b-3xl flex justify-between items-center">
             <span className="text-xs text-primary font-medium cursor-pointer hover:underline">Audit trail</span>
             <div className="w-16 h-1.5 bg-muted rounded-full overflow-hidden">
-              <div className="w-[75%] h-full bg-emerald-500 rounded-full" />
+              <div className="w-[75%] h-full bg-primary rounded-full" />
             </div>
           </div>
         </motion.div>

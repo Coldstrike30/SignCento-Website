@@ -17,14 +17,14 @@ export default function Product() {
       
       <main className="flex-grow">
         <PageHeader 
-          title="One Platform for Every Digital Agreement" 
-          description="Manage the entire agreement lifecycle—from creation to execution and secure storage—in a single, unified platform."
+          title="A Complete Digital Agreement Platform" 
+          description="From document preparation and template management to multi-party signing, workflow automation, API integrations, compliance logs, and secure storage, Signcentro gives organizations the tools to manage digital agreements end to end. WhatsApp Signing extends the platform by making signing easier for mobile-first recipients."
         />
         
-        <div className="bg-emerald-50 border-y border-emerald-100 py-4">
-          <div className="container mx-auto px-4 flex items-center justify-center gap-3 text-emerald-800 text-sm font-medium">
-            <Smartphone className="h-5 w-5 text-emerald-600" />
-            <span>WhatsApp delivery is built into every plan. Email, portal, and embedded signing are also supported.</span>
+        <div className="bg-primary/5 border-y border-primary/10 py-4">
+          <div className="container mx-auto px-4 flex items-center justify-center gap-3 text-primary text-sm font-medium">
+            <SplitSquareVertical className="h-5 w-5" />
+            <span>Signcentro supports email, web, API, embedded, and WhatsApp signing — all included on every plan.</span>
           </div>
         </div>
 
@@ -58,29 +58,33 @@ export default function Product() {
             
             <div className="flex flex-col gap-0 pl-4 md:pl-8 border-l border-primary/20 ml-4 md:ml-0 relative">
               <WorkflowStep step={1} icon={<FileText />} title="Upload Document" description="Start with a PDF, Word file, or select a pre-configured template from your library." />
-              <WorkflowStep step={2} icon={<Users />} title="Add Signers" description="Specify signers, approvers, and CCs. Assign specific roles and authentication methods." />
+              <WorkflowStep step={2} icon={<Users />} title="Add Recipients" description="Specify signers, approvers, and CCs. Assign specific roles and authentication methods." />
+              <WorkflowStep step={3} icon={<Wand2 />} title="Configure Workflow" description="Set up signing order, conditional routing, and reminders." />
               
               <div className="relative">
-                <WorkflowStep step={3} icon={<Smartphone className="text-[#00A884]" />} title="Choose WhatsApp Delivery" description="Select WhatsApp as the primary delivery channel for faster response times." />
+                <WorkflowStep step={4} icon={
+                  <div className="flex flex-col items-center">
+                    <Send />
+                    <span className="mt-1 text-[10px] bg-[#25D366]/20 text-[#00A884] px-1.5 py-0.5 rounded-full whitespace-nowrap">WhatsApp</span>
+                  </div>
+                } title="Choose Delivery Channel" description="Select delivery via Email, Web Portal, API, or WhatsApp depending on recipient preference." />
               </div>
               
-              <div className="relative">
-                <WorkflowStep step={4} icon={<Send className="text-[#00A884]" />} title="Send Secure Link" description="A secure, encrypted link is dispatched directly to the recipient's WhatsApp chat." />
-              </div>
-              
-              <WorkflowStep step={5} icon={<ShieldCheck />} title="OTP Verification" description="The recipient verifies their identity using a One-Time Password before accessing the document." />
-              <WorkflowStep step={6} icon={<FileCheck2 />} title="Review & Sign" description="The user reviews the document securely in their mobile browser and signs." />
-              <WorkflowStep step={7} icon={<History />} title="Audit Trail Generated" description="A legally binding, tamper-evident log of the entire WhatsApp delivery and signing process is created." />
+              <WorkflowStep step={5} icon={<ShieldCheck />} title="Recipient Verification" description="The recipient verifies their identity using a One-Time Password or other configured methods before accessing the document." />
+              <WorkflowStep step={6} icon={<FileCheck2 />} title="Review & Sign" description="The user reviews the document securely and signs." />
+              <WorkflowStep step={7} icon={<History />} title="Audit Trail Generated" description="A legally binding, tamper-evident log of the entire delivery and signing process is created." />
               <WorkflowStep step={8} icon={<Database />} title="Completed Document Stored" description="The finalized agreement is securely archived and easily searchable." />
             </div>
           </div>
         </section>
 
         <CTASection 
-          title="Transform Your Document Processes" 
-          subtitle="Stop chasing paper. Start closing deals faster with automated digital workflows."
-          primaryText="Start WhatsApp Signing"
-          primaryHref="/whatsapp"
+          title="Ready for Enterprise E-Signatures with Faster Completion?" 
+          subtitle="Use Signcentro to manage secure digital agreements across email, web, API, and WhatsApp."
+          primaryText="Start Free Trial"
+          primaryHref="/pricing"
+          secondaryText="Book Enterprise Demo"
+          secondaryHref="/contact"
         />
       </main>
 

@@ -1,0 +1,82 @@
+POSITIONING CORRECTION:
+Do not position Signcentro as a WhatsApp-only signing platform.
+
+Position Signcentro as a complete enterprise e-signature and digital agreement platform similar to DocuSign, Adobe Sign, and Dropbox Sign, but with a powerful WhatsApp Signing capability as a unique differentiator.
+
+CORE MESSAGE:
+Signcentro gives businesses everything they expect from a modern e-signature platform — document preparation, templates, multi-party signing, workflow automation, audit trails, compliance controls, APIs, dashboards, and secure document storage — with the added advantage of WhatsApp Signing for faster completion and better customer engagement.
+
+UPDATED HERO HEADLINE:
+Enterprise E-Signatures. Now Faster with WhatsApp Signing.
+
+UPDATED HERO SUBHEADLINE:
+Signcentro helps businesses prepare, send, sign, track, and manage documents securely across web, email, API, and WhatsApp — giving teams the power of a full digital agreement platform with the speed of mobile-first signing.
+
+CTA BUTTONS:
+- Start Free Trial
+- Book Enterprise Demo
+
+SECONDARY HERO MESSAGE:
+Everything you expect from a world-class e-signature platform — plus WhatsApp signing for customers who respond faster on mobile.
+
+FEATURE PRIORITY:
+Do not make every section only about WhatsApp.
+Structure the website around the full platform, then repeatedly show WhatsApp Signing as the differentiated advantage.
+
+FEATURE ORDER:
+1. Secure E-Signatures
+2. WhatsApp Signing
+3. Document Workflows
+4. Templates & Reusable Documents
+5. Audit Trails & Compliance
+6. API & Embedded Signing
+7. Identity Verification
+8. Admin Dashboard & Reporting
+
+HOMEPAGE DIFFERENTIATOR SECTION:
+Heading:
+The Power of E-Signatures. The Speed of WhatsApp.
+
+Copy:
+Signcentro delivers a complete digital agreement platform for teams that need secure, compliant, and trackable document signing. Unlike traditional e-signature tools that rely mainly on email and portals, Signcentro adds WhatsApp Signing so recipients can act faster from the channel they already use every day.
+
+Cards:
+1. Full E-Signature Platform
+Create, send, sign, track, and store agreements securely.
+
+2. Multi-Channel Signing
+Send documents through email, web, API, embedded signing, and WhatsApp.
+
+3. Faster Completion with WhatsApp
+Reduce signing delays by reaching recipients on a familiar mobile channel.
+
+4. Enterprise Governance
+Control users, roles, workflows, audit trails, templates, and access permissions.
+
+5. Built for Developers
+Use APIs and webhooks to embed signing into existing applications.
+
+6. Designed for Regulated Workflows
+Support banking, HR, legal, procurement, government, and compliance-driven processes.
+
+WHATSAPP SIGNING PAGE POSITIONING:
+This page should be positioned as a premium feature inside the broader Signcentro platform.
+
+Hero:
+WhatsApp Signing for Modern Digital Agreements
+
+Subheadline:
+Add WhatsApp as a secure signing channel within your enterprise e-signature workflows, without losing audit trails, compliance controls, templates, approvals, or document governance.
+
+Clarifying copy:
+Signcentro is not just a WhatsApp signing tool. It is a complete e-signature and document workflow platform that allows organizations to use WhatsApp where it improves speed, convenience, and completion rates.
+
+UPDATED PRODUCT PAGE MESSAGE:
+A Complete Digital Agreement Platform
+
+Copy:
+From document preparation and template management to multi-party signing, workflow automation, API integrations, compliance logs, and secure storage, Signcentro gives organizations the tools to manage digital agreements end to end. WhatsApp Signing extends the platform by making signing easier for mobile-first recipients.
+
+UPDATED FINAL CTA:
+Ready for Enterprise E-Signatures with Faster Completion?
+Use Signcentro to manage secure digital agreements across email, web, API, and WhatsApp.

@@ -2,7 +2,7 @@ import { useSeo } from "@/hooks/use-seo";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Network } from "lucide-react";
 import { useState } from "react";
 
 export default function Pricing() {
@@ -14,20 +14,20 @@ export default function Pricing() {
       name: "Starter",
       desc: "For individuals and small teams.",
       price: isAnnual ? "$12" : "$15",
-      features: ["5 users included", "100 documents per month", "Basic templates", "WhatsApp Signing (up to 50 docs/mo)", "Email support", "Standard security"],
+      features: ["5 users included", "100 documents per month", "Basic templates", "Standard security", "WhatsApp Signing (up to 50 docs/mo)", "Email support"],
     },
     {
       name: "Business",
       desc: "For growing companies.",
       price: isAnnual ? "$29" : "$39",
-      features: ["Unlimited users", "Unlimited documents", "Advanced workflows", "WhatsApp Signing — unlimited", "Priority support", "Custom branding", "API access (limited)"],
+      features: ["Unlimited users", "Unlimited documents", "Advanced workflows", "Custom branding", "API access (limited)", "WhatsApp Signing — unlimited", "Priority support"],
       popular: true,
     },
     {
       name: "Enterprise",
       desc: "For large organizations with complex needs.",
       price: "Custom",
-      features: ["Everything in Business", "Unlimited API access", "WhatsApp Signing with white-label and dedicated number", "SSO & Advanced IAM", "Dedicated success manager", "On-premise deployment option", "Custom SLA & compliance"],
+      features: ["Everything in Business", "SSO & Advanced IAM", "Unlimited API access", "On-premise deployment option", "Custom SLA & compliance", "WhatsApp Signing with white-label and dedicated number", "Dedicated success manager"],
     }
   ];
 
@@ -35,10 +35,10 @@ export default function Pricing() {
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <main className="flex-grow pt-8 pb-32">
-        <div className="bg-emerald-50 border-y border-emerald-100 py-3 mb-12">
-          <div className="container mx-auto px-4 flex items-center justify-center gap-2 text-emerald-800 text-sm font-bold">
-            <CheckCircle2 className="h-4 w-4 text-[#25D366]" />
-            WhatsApp Signing included on every plan.
+        <div className="bg-primary/5 border-y border-primary/10 py-3 mb-12">
+          <div className="container mx-auto px-4 flex items-center justify-center gap-2 text-primary text-sm font-bold">
+            <Network className="h-4 w-4" />
+            Multi-channel signing — email, web, API, and WhatsApp — included on every plan.
           </div>
         </div>
         
