@@ -24,7 +24,7 @@ export default function Product() {
         <div className="bg-primary/5 border-y border-primary/10 py-4">
           <div className="container mx-auto px-4 flex items-center justify-center gap-3 text-primary text-sm font-medium">
             <SplitSquareVertical className="h-5 w-5" />
-            <span>Signcentro supports email, web, API, embedded, and WhatsApp signing — all included on every plan.</span>
+            <span>Signcentro supports email, web, API, embedded, and WhatsApp signing, all included on every plan.</span>
           </div>
         </div>
 

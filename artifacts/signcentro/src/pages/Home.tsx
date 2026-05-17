@@ -37,7 +37,7 @@ export default function Home() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 via-blue-500 to-cyan-500">Now Faster with WhatsApp Signing.</span>
             </>
           }
-          subheadline="Signcentro helps businesses prepare, send, sign, track, and manage documents securely across web, email, API, and WhatsApp — giving teams the power of a full digital agreement platform with the speed of mobile-first signing."
+          subheadline="Signcentro helps businesses prepare, send, sign, track, and manage documents securely across web, email, API, and WhatsApp, giving teams the power of a full digital agreement platform with the speed of mobile-first signing."
           buttons={
             <>
               <Button size="lg" className="w-full sm:w-auto text-lg h-14 px-8 bg-primary hover:bg-primary/90" asChild>
@@ -56,7 +56,7 @@ export default function Home() {
         <section className="py-6 border-y bg-muted/30">
           <div className="container mx-auto px-4">
             <p className="text-center text-base text-muted-foreground font-semibold mb-6">
-              Everything you expect from a world-class e-signature platform — plus WhatsApp signing for customers who respond faster on mobile.
+              Everything you expect from a world-class e-signature platform, plus WhatsApp signing for customers who respond faster on mobile.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale">
               {["ECOBANK", "MTN", "STANBIC", "AFRICA RE", "MINISTRY OF FINANCE", "DELOITTE"].map((logo, i) => (

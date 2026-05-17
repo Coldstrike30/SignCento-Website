@@ -61,10 +61,10 @@ export function DashboardMockup() {
             </div>
             <div className="flex-1 p-2 flex flex-col gap-2 overflow-hidden">
               {[
-                { title: "Master Services Agreement — Acme Bank", status: "Pending", color: "bg-yellow-100 text-yellow-800" },
-                { title: "Vendor NDA — Pinnacle Logistics", status: "Signed", color: "bg-green-100 text-green-800" },
-                { title: "Employment Offer — K. Mensah", status: "In Review", color: "bg-blue-100 text-blue-800" },
-                { title: "Loan Disbursement — Q3 Batch", status: "Signed", color: "bg-green-100 text-green-800" },
+                { title: "Master Services Agreement Acme Bank", status: "Pending", color: "bg-yellow-100 text-yellow-800" },
+                { title: "Vendor NDA Pinnacle Logistics", status: "Signed", color: "bg-green-100 text-green-800" },
+                { title: "Employment Offer K. Mensah", status: "In Review", color: "bg-blue-100 text-blue-800" },
+                { title: "Loan Disbursement Q3 Batch", status: "Signed", color: "bg-green-100 text-green-800" },
               ].map((doc, i) => (
                 <div key={i} className="flex items-center justify-between p-2 hover:bg-muted/50 rounded-lg transition-colors">
                   <div className="flex items-center gap-3">

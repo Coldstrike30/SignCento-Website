@@ -20,7 +20,7 @@ export default function Pricing() {
       name: "Business",
       desc: "For growing companies.",
       price: isAnnual ? "$29" : "$39",
-      features: ["Unlimited users", "Unlimited documents", "Advanced workflows", "Custom branding", "API access (limited)", "WhatsApp Signing — unlimited", "Priority support"],
+      features: ["Unlimited users", "Unlimited documents", "Advanced workflows", "Custom branding", "API access (limited)", "WhatsApp Signing unlimited", "Priority support"],
       popular: true,
     },
     {
@@ -38,7 +38,7 @@ export default function Pricing() {
         <div className="bg-primary/5 border-y border-primary/10 py-3 mb-12">
           <div className="container mx-auto px-4 flex items-center justify-center gap-2 text-primary text-sm font-bold">
             <Network className="h-4 w-4" />
-            Multi-channel signing — email, web, API, and WhatsApp — included on every plan.
+            Multi-channel signing across email, web, API, and WhatsApp, included on every plan.
           </div>
         </div>
         

@@ -95,7 +95,7 @@ export function HeroSplitVisual() {
           className="w-[340px] md:w-[420px] bg-card rounded-3xl border shadow-2xl flex flex-col z-30 md:rotate-[1deg] transform relative"
         >
           <div className="p-5 border-b bg-muted/30 rounded-t-3xl">
-            <h3 className="font-semibold text-foreground text-base mb-1">Loan Agreement — Ada Mensah</h3>
+            <h3 className="font-semibold text-foreground text-base mb-1">Loan Agreement Ada Mensah</h3>
             <div className="flex items-center justify-between">
               <p className="text-xs text-muted-foreground flex items-center gap-1">
                 <Activity className="h-3 w-3 text-blue-500" /> Live Tracking

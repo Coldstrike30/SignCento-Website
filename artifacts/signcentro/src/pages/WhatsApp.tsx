@@ -294,19 +294,19 @@ export default function WhatsApp() {
                           </thead>
                           <tbody className="divide-y">
                             <tr>
-                              <td className="px-4 py-3 font-medium">Loan Agreement - A. Doe</td>
+                              <td className="px-4 py-3 font-medium">Loan Agreement A. Doe</td>
                               <td className="px-4 py-3"><Badge className="bg-[#25D366]/20 text-[#00A884] hover:bg-[#25D366]/30 border-none">WhatsApp</Badge></td>
                               <td className="px-4 py-3 text-emerald-600 flex items-center gap-1"><CheckCircle2 className="h-3 w-3" /> Verified</td>
                               <td className="px-4 py-3"><span className="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">Viewed</span></td>
                             </tr>
                             <tr>
-                              <td className="px-4 py-3 font-medium">Account Opening - J. Smith</td>
+                              <td className="px-4 py-3 font-medium">Account Opening J. Smith</td>
                               <td className="px-4 py-3"><Badge className="bg-[#25D366]/20 text-[#00A884] hover:bg-[#25D366]/30 border-none">WhatsApp</Badge></td>
                               <td className="px-4 py-3 text-emerald-600 flex items-center gap-1"><CheckCircle2 className="h-3 w-3" /> Verified</td>
                               <td className="px-4 py-3"><span className="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded">Signed</span></td>
                             </tr>
                             <tr>
-                              <td className="px-4 py-3 font-medium">Vendor NDA - TechCorp</td>
+                              <td className="px-4 py-3 font-medium">Vendor NDA TechCorp</td>
                               <td className="px-4 py-3"><Badge variant="outline">Email</Badge></td>
                               <td className="px-4 py-3 text-muted-foreground">-</td>
                               <td className="px-4 py-3"><span className="text-xs font-medium text-amber-700 bg-amber-50 px-2 py-1 rounded">Pending</span></td>
