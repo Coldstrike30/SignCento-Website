@@ -1,0 +1,454 @@
+You are an expert full-stack product designer, frontend engineer, UX strategist, and conversion copywriter.
+
+Build a modern, premium, enterprise-grade website for an e-signature and digital agreement platform called Signcentro.
+
+The website should feel like a serious competitor to DocuSign, Adobe Sign, Dropbox Sign, and PandaDoc, but with a fresh, African-enterprise-ready positioning. It must be visually stunning, fast, responsive, clean, trustworthy, and highly conversion-focused.
+
+PROJECT NAME:
+Signcentro Website
+
+BRAND POSITIONING:
+Signcentro is a secure e-signature and digital agreement platform that helps businesses, financial institutions, government agencies, HR teams, legal teams, procurement teams, and developers prepare, send, sign, track, and manage documents digitally.
+
+PRIMARY VALUE PROPOSITION:
+Sign Documents Faster. Close Deals Smarter.
+
+BRAND TONE:
+Modern, secure, elegant, enterprise-grade, confident, simple, human, trustworthy.
+
+DESIGN DIRECTION:
+Create a beautiful SaaS website with:
+- Clean enterprise UI
+- White background with deep navy, electric blue, soft cyan, and subtle green accents
+- Premium gradients
+- Rounded cards
+- Soft shadows
+- Clean icons
+- Glassmorphism sections where appropriate
+- Smooth scroll animations
+- Subtle micro-interactions
+- Beautiful hero section
+- Strong CTA buttons
+- Mobile-first responsive layout
+
+SUGGESTED COLORS:
+- Primary Navy: #071A33
+- Primary Blue: #2563EB
+- Cyan Accent: #06B6D4
+- Success Green: #10B981
+- Light Background: #F8FAFC
+- Dark Text: #0F172A
+- Muted Text: #64748B
+- White: #FFFFFF
+
+TECH STACK:
+Use:
+- React
+- Vite
+- Tailwind CSS
+- React Router
+- Lucide React icons
+- Framer Motion for animations
+
+WEBSITE STRUCTURE:
+Create the following pages:
+
+1. Home
+2. Product
+3. Solutions
+4. API & Developers
+5. Security & Compliance
+6. Pricing
+7. WhatsApp Signing
+8. Resources
+9. About
+10. Contact
+11. Trust Center
+
+GLOBAL REQUIREMENTS:
+- Sticky navigation bar
+- Responsive mobile menu
+- Footer with links
+- Reusable CTA sections
+- Reusable feature cards
+- Reusable industry cards
+- Reusable testimonial cards
+- Reusable pricing cards
+- Smooth page transitions
+- SEO-friendly page titles and meta descriptions
+- Clear CTA buttons: “Book Demo”, “Start Free Trial”, “Explore API”
+- Add placeholder forms where required
+- Make the website feel complete and ready for a real SaaS company
+
+NAVIGATION:
+Top navigation should include:
+- Product
+- Solutions
+- API
+- Security
+- Pricing
+- Resources
+- Company
+
+Right side:
+- Login
+- Book Demo button
+- Start Free Trial button
+
+HOME PAGE CONTENT:
+
+Hero section:
+Headline:
+Sign Documents Faster. Close Deals Smarter.
+
+Subheadline:
+Signcentro helps modern organizations prepare, send, sign, track, and manage agreements securely from anywhere.
+
+CTA buttons:
+Start Free Trial
+Book Enterprise Demo
+
+Hero visual:
+Create a beautiful dashboard mockup showing:
+- Document status
+- Pending signatures
+- Completed agreements
+- Audit trail
+- API usage
+- WhatsApp signing status
+
+Trust line:
+Built for secure approvals, contracts, onboarding, procurement, compliance, and workflow automation.
+
+Section: Why Signcentro
+Heading:
+More Than E-Signatures — A Complete Digital Agreement Platform
+
+Copy:
+Signcentro helps organizations eliminate paperwork, accelerate approvals, reduce operational delays, and securely manage the full document signing lifecycle.
+
+Feature highlights:
+- Legally binding electronic signatures
+- Multi-party signing workflows
+- WhatsApp and email signing
+- API-first architecture
+- Audit trails and compliance logs
+- Role-based access control
+- Cloud and on-premise deployment options
+
+Section: Features
+Create feature cards for:
+1. Smart Document Workflows
+2. Secure E-Signatures
+3. API & Developer Platform
+4. WhatsApp Signing
+5. Identity Verification
+6. Real-Time Tracking
+7. Compliance & Governance
+8. Templates & Reusable Documents
+
+Section: Industry Use Cases
+Cards for:
+- Banking & Financial Services
+- Government & Public Sector
+- Human Resources
+- Legal Teams
+- Procurement & Supply Chain
+- Sales & Customer Agreements
+
+Section: Security
+Heading:
+Security You Can Trust
+
+Include:
+- End-to-end encryption
+- Tamper-proof audit trails
+- Secure cloud infrastructure
+- Data residency options
+- Role-based access control
+- API authentication
+- Compliance-ready architecture
+
+Section: API
+Heading:
+Developer-Friendly APIs
+
+Copy:
+Embed Signcentro into your ERP, CRM, HR, procurement, banking, and customer onboarding applications.
+
+Include API code mockup.
+
+Section: Testimonials
+Create 3 polished testimonial cards.
+
+Section: Final CTA:
+Ready to Go Paperless?
+Transform how your organization signs, approves, and manages documents.
+
+Buttons:
+Start Free Trial
+Speak to Sales
+
+PRODUCT PAGE:
+Hero:
+One Platform for Every Digital Agreement
+
+Sections:
+- Document Creation & Templates
+- Workflow Automation
+- Multi-Channel Signing
+- Real-Time Tracking
+- Enterprise Administration
+- Document Repository
+- Approval Routing
+- Notifications & Reminders
+- Audit Trails
+
+Include a product workflow visual:
+Upload Document → Add Recipients → Configure Workflow → Send for Signing → Track Status → Store Agreement
+
+API & DEVELOPERS PAGE:
+Hero:
+Embed Digital Signing Into Any Application
+
+Sections:
+- REST APIs
+- Webhooks
+- SDKs
+- Sandbox Environment
+- API Keys
+- Postman Collection
+- Developer Portal
+- Embedded Signing
+- Status Tracking
+
+Show sample API code block:
+POST /api/v1/signature-requests
+
+Include developer CTA:
+Start Building with Signcentro
+
+SOLUTIONS PAGE:
+Hero:
+Digital Signing Solutions for Every Business Function
+
+Create separate solution sections:
+1. HR & Employee Onboarding
+2. Procurement & Vendor Management
+3. Banking & Financial Services
+4. Legal & Compliance
+5. Sales & Customer Agreements
+6. Government & Public Sector
+
+Each section should include:
+- Pain point
+- Signcentro solution
+- Key benefits
+- CTA
+
+SECURITY & COMPLIANCE PAGE:
+Hero:
+Enterprise Security at the Core
+
+Sections:
+- Data Encryption
+- Identity Verification
+- Audit Trails
+- Access Controls
+- Secure APIs
+- Data Retention
+- Compliance Readiness
+- Cloud, Private Cloud & On-Premise Deployment
+- Incident Response
+- Privacy & Governance
+
+Make this page look very trustworthy.
+
+PRICING PAGE:
+Hero:
+Simple Pricing for Teams and Enterprises
+
+Pricing tiers:
+1. Starter
+2. Business
+3. Enterprise
+
+Starter:
+For small teams getting started with digital signing.
+
+Business:
+For growing companies that need workflows, templates, team controls, and integrations.
+
+Enterprise:
+For regulated organizations that need advanced governance, APIs, custom deployment, dedicated support, and compliance controls.
+
+Include:
+- Monthly/yearly toggle UI
+- Feature comparison table
+- FAQ section
+- Contact Sales CTA
+
+WHATSAPP SIGNING PAGE:
+Hero:
+Sign Documents Directly from WhatsApp
+
+Copy:
+Enable customers, employees, vendors, and partners to review and sign documents securely from WhatsApp without downloading another app.
+
+Sections:
+- How it works
+- Use cases
+- Security controls
+- Benefits
+- WhatsApp signing workflow visual
+
+Workflow:
+Send Document → Recipient Gets WhatsApp Link → OTP Verification → Review Document → Sign → Completion Confirmation
+
+RESOURCES PAGE:
+Hero:
+Insights for Digital Agreements, Automation, and Compliance
+
+Create blog/resource cards for:
+- E-Signature Compliance
+- Workflow Automation
+- Procurement Digitization
+- HR Automation
+- Banking Operations
+- API Integration Guides
+- Security Best Practices
+
+ABOUT PAGE:
+Hero:
+Built for the Future of Digital Business
+
+Copy:
+Signcentro was created to help organizations eliminate paper-based processes and modernize document approvals with secure, scalable, and intelligent digital workflows.
+
+Sections:
+- Mission
+- Vision
+- Why We Built Signcentro
+- Our Values
+- Enterprise Commitment
+
+CONTACT PAGE:
+Hero:
+Talk to Our Team
+
+Create contact form fields:
+- Full Name
+- Work Email
+- Company Name
+- Phone Number
+- Interest Area
+- Message
+
+Interest dropdown:
+- Book a Demo
+- API Integration
+- Enterprise Deployment
+- Partnership
+- Support
+- Pricing
+
+Also add contact cards:
+- Sales
+- Support
+- Partnerships
+- Enterprise Consultation
+
+TRUST CENTER PAGE:
+Hero:
+Trust, Security, and Governance for Enterprise Agreements
+
+Sections:
+- Security Practices
+- Compliance Standards
+- Data Retention
+- Infrastructure & Hosting
+- Privacy
+- Incident Response
+- Uptime & Availability
+- Enterprise Controls
+- Responsible AI readiness placeholder if future AI features are added
+
+FOOTER:
+Include:
+Product:
+- Features
+- API
+- WhatsApp Signing
+- Pricing
+
+Solutions:
+- HR
+- Procurement
+- Banking
+- Legal
+- Government
+
+Company:
+- About
+- Contact
+- Resources
+- Trust Center
+
+Legal:
+- Privacy Policy
+- Terms of Service
+- Data Processing Agreement
+- Security
+
+SOCIAL ICONS:
+LinkedIn, X, YouTube
+
+COMPONENTS TO CREATE:
+- Navbar
+- Footer
+- Button
+- HeroSection
+- FeatureCard
+- IndustryCard
+- PricingCard
+- TestimonialCard
+- CTASection
+- FAQAccordion
+- ContactForm
+- PageHeader
+- CodeBlock
+- WorkflowStep
+- SecurityCard
+
+UI/UX REQUIREMENTS:
+- Use beautiful spacing
+- Avoid clutter
+- Every page must have a clear conversion goal
+- Use consistent typography
+- Use subtle motion on scroll
+- Cards should animate gently on hover
+- Buttons should have polished hover states
+- Mobile menu must work perfectly
+- All forms should have clean validation styling, even if submission is mocked
+- Add realistic placeholder data
+
+SEO REQUIREMENTS:
+Add proper meta titles and descriptions for each page.
+
+Example:
+Home title:
+Signcentro | Secure E-Signatures & Digital Agreement Platform
+
+Home meta description:
+Signcentro helps businesses send, sign, track, and manage documents securely with enterprise-grade e-signatures, workflows, audit trails, and APIs.
+
+STYLE QUALITY:
+The site must look like a polished SaaS product website, not a basic template.
+
+FINAL OUTPUT:
+Deliver a fully functional React website with all pages, routing, components, responsive styling, animations, and complete copy.
+
+Do not leave pages empty.
+Do not use lorem ipsum.
+Do not make the design generic.
+Make the experience premium, beautiful, enterprise-ready, and conversion-focused.
