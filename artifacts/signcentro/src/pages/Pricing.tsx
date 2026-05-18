@@ -13,13 +13,13 @@ export default function Pricing() {
     {
       name: "Starter",
       desc: "For individuals and small teams.",
-      price: isAnnual ? "$12" : "$15",
+      price: isAnnual ? "$6" : "$7.50",
       features: ["5 users included", "100 documents per month", "Basic templates", "Standard security", "WhatsApp Signing (up to 50 docs/mo)", "Email support"],
     },
     {
       name: "Business",
       desc: "For growing companies.",
-      price: isAnnual ? "$29" : "$39",
+      price: isAnnual ? "$14.50" : "$19.50",
       features: ["Unlimited users", "Unlimited documents", "Advanced workflows", "Custom branding", "API access (limited)", "WhatsApp Signing unlimited", "Priority support"],
       popular: true,
     },
