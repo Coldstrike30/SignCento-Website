@@ -8,7 +8,7 @@ COPY artifacts/api-server/src ./artifacts/api-server/src
 COPY lib ./lib
 
 RUN corepack enable && corepack pnpm install --no-frozen-lockfile
-RUN pnpm --dir artifacts/api-server run build
+RUN pnpm --dir artifacts/api-server run build && ls -la artifacts/api-server/dist/
 
 EXPOSE 5000
 CMD ["sh", "-c", "node --enable-source-maps ./artifacts/api-server/dist/index.mjs"]
