@@ -14,4 +14,4 @@ WORKDIR /app/artifacts/signcentro
 RUN pnpm run build
 
 EXPOSE 5173
-CMD ["pnpm", "run", "serve"]
+CMD ["sh", "-c", "pnpm run preview"]
