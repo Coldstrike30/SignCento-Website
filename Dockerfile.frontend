@@ -9,7 +9,7 @@ COPY artifacts/signcentro/public ./artifacts/signcentro/public
 COPY attached_assets ./attached_assets
 COPY lib ./lib
 
-RUN corepack enable && corepack pnpm install --frozen-lockfile
+RUN corepack enable && corepack pnpm install --no-frozen-lockfile
 WORKDIR /app/artifacts/signcentro
 RUN pnpm run build
 
