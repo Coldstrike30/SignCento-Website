@@ -8,8 +8,8 @@ COPY artifacts/api-server/src ./artifacts/api-server/src
 COPY lib ./lib
 
 RUN corepack enable && corepack pnpm install --no-frozen-lockfile
-RUN pnpm --dir artifacts/api-server run build 2>&1 || exit 1
-RUN echo "Build output:" && ls -la artifacts/api-server/dist/ || echo "dist folder missing!"
+RUN cd artifacts/api-server && node ./build.mjs 2>&1
+RUN echo "Build output:" && ls -la artifacts/api-server/dist/ || echo "ERROR: dist folder missing!"
 
 EXPOSE 5000
 CMD ["sh", "-c", "node --enable-source-maps ./artifacts/api-server/dist/index.mjs"]
