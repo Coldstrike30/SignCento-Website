@@ -1,0 +1,17 @@
+FROM node:22-bullseye-slim
+
+WORKDIR /app
+
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml tsconfig.base.json ./
+COPY artifacts/signcentro/package.json artifacts/signcentro/tsconfig.json artifacts/signcentro/vite.config.ts artifacts/signcentro/index.html ./artifacts/signcentro/
+COPY artifacts/signcentro/src ./artifacts/signcentro/src
+COPY artifacts/signcentro/public ./artifacts/signcentro/public
+COPY attached_assets ./attached_assets
+COPY lib ./lib
+
+RUN corepack enable && corepack pnpm install --frozen-lockfile
+WORKDIR /app/artifacts/signcentro
+RUN pnpm run build
+
+EXPOSE 5173
+CMD ["pnpm", "run", "serve"]

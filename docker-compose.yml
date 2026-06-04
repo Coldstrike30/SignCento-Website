@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Cast123456
+      POSTGRES_DB: workspace_db
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      PORT: 5000
+      DATABASE_URL: postgresql://postgres:Cast123456@db:5432/workspace_db
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    environment:
+      PORT: 5173
+    depends_on:
+      - api
+    ports:
+      - "5173:5173"
+
+volumes:
+  db-data:
