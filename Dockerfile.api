@@ -11,4 +11,4 @@ RUN corepack enable && corepack pnpm install --no-frozen-lockfile
 RUN pnpm --dir artifacts/api-server run build
 
 EXPOSE 5000
-CMD ["node", "--enable-source-maps", "./artifacts/api-server/dist/index.mjs"]
+CMD ["sh", "-c", "node --enable-source-maps ./artifacts/api-server/dist/index.mjs"]
