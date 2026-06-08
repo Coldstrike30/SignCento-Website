@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "lightningcss": "^1.32.0",
-    "vite": "catalog:"
+    "vite": "^7.3.3"
   }
 }
