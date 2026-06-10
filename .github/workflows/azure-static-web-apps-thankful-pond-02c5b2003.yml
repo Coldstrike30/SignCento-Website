@@ -15,36 +15,112 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     permissions:
-       id-token: write
-       contents: read
+      id-token: write
+      contents: read
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          submodules: true
-          lfs: false
-      - name: Install OIDC Client from Core Package
+          node-version: '20'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: Resolve catalog references in package.json
+        run: |
+          cat > /tmp/resolve-catalog.js << 'JSEOF'
+          const fs = require('fs');
+          const catalog = {
+            '@replit/vite-plugin-cartographer': '^0.5.1',
+            '@replit/vite-plugin-dev-banner': '^0.1.1',
+            '@replit/vite-plugin-runtime-error-modal': '^0.0.6',
+            '@tailwindcss/vite': '^4.1.14',
+            '@tanstack/react-query': '^5.90.21',
+            '@types/node': '^25.3.3',
+            '@types/react': '^19.2.0',
+            '@types/react-dom': '^19.2.0',
+            '@vitejs/plugin-react': '^5.0.4',
+            'class-variance-authority': '^0.7.1',
+            'clsx': '^2.1.1',
+            'drizzle-orm': '^0.45.2',
+            'framer-motion': '^12.23.24',
+            'lucide-react': '^0.545.0',
+            'react': '19.1.0',
+            'react-dom': '19.1.0',
+            'tailwind-merge': '^3.3.1',
+            'tailwindcss': '^4.1.14',
+            'tsx': '^4.21.0',
+            'vite': '^7.3.3',
+            'wouter': '^3.3.5',
+            'zod': '^3.25.76'
+          };
+          const pkgPath = 'artifacts/signcentro/package.json';
+          const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
+          const resolveCatalog = (deps) => {
+            if (!deps) return deps;
+            return Object.fromEntries(
+              Object.entries(deps).map(([k, v]) => [k, v === 'catalog:' ? (catalog[k] || 'latest') : v])
+            );
+          };
+          const stripWorkspace = (deps) => {
+            if (!deps) return deps;
+            return Object.fromEntries(
+              Object.entries(deps).filter(([k]) => !k.startsWith('@workspace/'))
+            );
+          };
+          pkg.dependencies = stripWorkspace(resolveCatalog(pkg.dependencies));
+          pkg.devDependencies = stripWorkspace(resolveCatalog(pkg.devDependencies));
+          fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
+          console.log('Done - catalog: resolved, @workspace/* removed.');
+          JSEOF
+          node /tmp/resolve-catalog.js
+
+      - name: Remove pnpm workspace config
+        run: rm pnpm-workspace.yaml
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+        working-directory: artifacts/signcentro
+
+      - name: Build Vite app
+        run: pnpm run build
+        working-directory: artifacts/signcentro
+
+      - name: Copy build output to deploy folder
+        run: |
+          mkdir -p deploy
+          cp -r artifacts/signcentro/dist/public/. deploy/
+          echo "=== Deploy folder ==="
+          ls -la deploy/
+
+      - name: Install OIDC Client
         run: npm install @actions/core@1.6.0 @actions/http-client
+
       - name: Get Id Token
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: idtoken
         with:
-           script: |
-               const coredemo = require('@actions/core')
-               return await coredemo.getIDToken()
-           result-encoding: string
-      - name: Build And Deploy
+          script: |
+            const coredemo = require('@actions/core')
+            return await coredemo.getIDToken()
+          result-encoding: string
+
+      - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_THANKFUL_POND_02C5B2003 }}
           action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "./artifacts" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "build" # Built app content directory - optional
+          app_location: "deploy"
+          api_location: ""
+          output_location: ""
+          skip_app_build: true
           github_id_token: ${{ steps.idtoken.outputs.result }}
-          ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -52,7 +128,7 @@ jobs:
     name: Close Pull Request Job
     steps:
       - name: Close Pull Request
-        id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_THANKFUL_POND_02C5B2003 }}
           action: "close"
